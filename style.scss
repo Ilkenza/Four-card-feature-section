@@ -1,0 +1,246 @@
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$Very-Dark-Blue: hsl(234, 12%, 34%);
+$Grayish-Blue: hsl(229, 6%, 66%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: $Very-Light-Gray;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    .all{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .text{
+            display: flex;
+            align-items: center;
+            width: 500px;
+            flex-direction: column;
+            text-align: center;
+            .light{
+                font-weight: 200;
+                margin: 0px;
+                font-size: 36px;
+                color: $Very-Dark-Blue;
+            }
+            .bold{
+                font-weight: 600;
+                margin: 0px;
+                font-size: 36px;
+                color: $Very-Dark-Blue;
+            }
+            p{
+                font-size: 15px;
+                color: $Grayish-Blue;
+            }
+        }
+        .all-card{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            height: 700px;
+            justify-content: center;
+            .supervisor{
+                background: $Very-Light-Gray;
+                border-top: 5px solid $Cyan;
+                border-radius: 10px;
+                padding: 50px;
+                margin-right: 30px;
+                width: 300px;
+                box-shadow: 0px 30px 60px rgb(0 0 0 / 15%);
+                h4{
+                    margin: 0px;
+                    font-size: 23px;
+                    color: $Very-Dark-Blue;
+                }
+                p{
+                    font-size: 15px;
+                    color: $Grayish-Blue;
+                }
+                img{
+                    float: right;
+                }
+            }
+            .t-k{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 700px;
+                .team-builder{
+                    background: $Very-Light-Gray;
+                    border-top: 5px solid $Red;
+                    border-radius: 10px;
+                    padding: 50px;
+                    width: 300px;
+                    box-shadow: 0px 30px 60px rgb(0 0 0 / 15%);
+                    margin-bottom: 30px;
+                    h4{
+                        margin: 0px;
+                        font-size: 23px;
+                        color: $Very-Dark-Blue;
+                    }
+                    p{
+                        font-size: 15px;
+                        color: $Grayish-Blue;
+                    }
+                    img{
+                        float: right;
+                    }
+                }
+                .karma{
+                    background: $Very-Light-Gray;
+                    border-top: 5px solid $Orange;
+                    border-radius: 10px;
+                    padding: 50px;
+                    width: 300px;
+                    box-shadow: 0px 30px 60px rgb(0 0 0 / 15%);
+                    h4{
+                        margin: 0px;
+                        font-size: 23px;
+                        color: $Very-Dark-Blue;
+                    }
+                    p{
+                        font-size: 15px;
+                        color: $Grayish-Blue;
+                    }
+                    img{
+                        float: right;
+                    }
+                }
+            }
+            .calculator{
+                background: $Very-Light-Gray;
+                border-top: 5px solid $Blue;
+                border-radius: 10px;
+                padding: 50px;
+                width: 300px;
+                margin-left: 30px;
+                box-shadow: 0px 30px 60px rgb(0 0 0 / 15%);
+                h4{
+                    margin: 0px;
+                    font-size: 23px;
+                    color: $Very-Dark-Blue;
+                }
+                p{
+                    font-size: 15px;
+                    color: $Grayish-Blue;
+                }
+                img{
+                    float: right;
+                }
+            }
+        }
+    }
+    .attribution { 
+        font-size: 13px; 
+        text-align: center; 
+    }
+    .attribution a {
+        color: hsl(228, 45%, 44%); 
+    }
+}
+@media (max-width:1300px){
+    body{
+        .main{
+            .all{
+                .text{
+
+                }
+                .all-card{
+                    
+                    .supervisor{
+                        padding: 30px;
+                    }
+                    .t-k{
+                        .team-builder{
+                            padding: 30px;
+                        }
+                        .karma{
+                            padding: 30px;
+                        }
+                    }
+                    .calculator{
+                        padding: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1170px){
+    body{
+        height: 140vh;
+        .main{
+            .all{
+                .text{
+                    width: 300px;
+                    .light{
+                        font-size: 24px;
+                    }
+                    .bold{
+                        font-size: 24px;
+                    }
+                }
+                .all-card{
+                    height: 1072px;
+                    flex-direction: column;
+                    .supervisor{
+                        margin: 20px 0px;
+                    }
+                    .t-k{
+                        height: 522px;
+                        .team-builder{
+                            margin-bottom: 20px;
+                        }
+                        .karma{
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .calculator{
+                        margin-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:400px){
+    body{
+        .main{
+            .all{
+                .all-card{
+                    height: 1000px;
+                    .supervisor{
+                        padding: 20px;
+                    }
+                    .t-k{
+                        height: 480px;
+                        .team-builder{
+                            padding: 20px;
+                        }
+                        .karma{
+                            padding: 20px;
+                        }
+                    }
+                    .calculator{
+                        padding: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
